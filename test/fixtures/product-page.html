@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="description" content="Fallback description">
+    <script type="application/ld+json">
+      {
+        "@graph": [
+          {
+            "@type": "Product",
+            "name": "Test produkt",
+            "description": "Popis produktu",
+            "sku": "SKU-1",
+            "category": "Doplňky stravy",
+            "image": ["https://www.olaola.cz/image.png"],
+            "offers": {
+              "price": "349",
+              "priceCurrency": "CZK",
+              "availability": "https://schema.org/InStock"
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Fallback title</h1>
+    <input type="hidden" name="product_variant_id" value="123">
+    <ul class="product-detail-header__benefits">
+      <li>Podpora energie</li>
+      <li>Bez kofeinu</li>
+      <li>Podpora energie</li>
+    </ul>
+    <script>
+      datalayer_push({"page":{"type":"product"},"product":{"id":["SKU-1"],"variant":["VAR-1"],"name":["Test produkt, 90 kapslí"],"nameWeb":["DataLayer name"],"priceVat":[399],"category":["Doplňky stravy"],"brand":["OlaOla"],"goal":["Energie"],"nameVariant":["Test produkt, 90 kapslí"],"size":["90 kapslí"]}});
+    </script>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+name = "olaola-mcp"
+main = "src/server/worker.ts"
+compatibility_date = "2026-05-12"
+
+# Optional. Set this when your Wrangler login has access to multiple accounts.
+# account_id = "your-cloudflare-account-id"
+
+# For a custom domain, replace this with your own hostname.
+# The domain's Cloudflare zone must be available in the selected account.
+workers_dev = false
+routes = [{ pattern = "olaola-mcp.example.com", custom_domain = true }]
+
+[vars]
+MCP_HTTP_PATH = "/mcp"
