@@ -93,42 +93,6 @@ The HTTP MCP endpoint is available at:
 http://localhost:3000/mcp
 ```
 
-## Local MCP Setup
-
-Use this for local MCP clients that can start a `stdio` server, such as Claude Desktop, Cursor, Codex, or native AI apps with MCP support.
-
-Build the project first, then add this server to your MCP client config:
-
-```json
-{
-  "mcpServers": {
-    "olaola": {
-      "command": "node",
-      "args": ["/Users/bxxf/projects/ola-ola/dist/server.js"]
-    }
-  }
-}
-```
-
-To enable [OlaOla](https://www.olaola.cz/) account order history, add credentials as environment variables in the MCP client config:
-
-```json
-{
-  "mcpServers": {
-    "olaola": {
-      "command": "node",
-      "args": ["/Users/bxxf/projects/ola-ola/dist/server.js"],
-      "env": {
-        "OLAOLA_EMAIL": "you@example.com",
-        "OLAOLA_PASSWORD": "your-password"
-      }
-    }
-  }
-}
-```
-
-Do not put credentials into prompts or tool arguments. Keep them in the local MCP client configuration only.
-
 ## ChatGPT Setup
 
 Use the hosted MCP endpoint directly in ChatGPT:
@@ -207,6 +171,42 @@ OLAOLA_PASSWORD = "your-password"
 ### Claude Desktop
 
 Add the JSON config above to Claude Desktop's MCP config file, then restart Claude Desktop.
+
+## Local MCP Setup
+
+Use this for local MCP clients that can start a `stdio` server, such as Claude Desktop, Cursor, Codex, or native AI apps with MCP support.
+
+Build the project first, then add this server to your MCP client config:
+
+```json
+{
+  "mcpServers": {
+    "olaola": {
+      "command": "node",
+      "args": ["/Users/bxxf/projects/ola-ola/dist/server.js"]
+    }
+  }
+}
+```
+
+To enable [OlaOla](https://www.olaola.cz/) account order history, add credentials as environment variables in the MCP client config:
+
+```json
+{
+  "mcpServers": {
+    "olaola": {
+      "command": "node",
+      "args": ["/Users/bxxf/projects/ola-ola/dist/server.js"],
+      "env": {
+        "OLAOLA_EMAIL": "you@example.com",
+        "OLAOLA_PASSWORD": "your-password"
+      }
+    }
+  }
+}
+```
+
+Do not put credentials into prompts or tool arguments. Keep them in the local MCP client configuration only.
 
 ## Custom Deployment
 
