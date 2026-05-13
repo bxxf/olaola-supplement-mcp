@@ -61,42 +61,6 @@ You can build an anonymous planning cart, read your real [OlaOla](https://www.ol
 "Generate a quick-buy link for this stack."
 ```
 
-## Quick Start
-
-```bash
-cd /Users/bxxf/projects/ola-ola
-npm install
-npm run build
-npm run typecheck
-```
-
-To run the server directly:
-
-```bash
-cd /Users/bxxf/projects/ola-ola
-npm start
-```
-
-For local development without building first:
-
-```bash
-npm run dev
-```
-
-The server speaks MCP over `stdio`, so most local MCP clients need a command plus args rather than a URL.
-
-To run MCP over HTTP locally:
-
-```bash
-npm run dev:http
-```
-
-The HTTP MCP endpoint is available at:
-
-```text
-http://localhost:3000/mcp
-```
-
 ## ChatGPT Setup
 
 Use the hosted MCP endpoint directly in ChatGPT:
@@ -180,7 +144,43 @@ Add the JSON config above to Claude Desktop's MCP config file, then restart Clau
 
 Use this for local MCP clients that can start a `stdio` server, such as Claude Desktop, Cursor, Codex, or native AI apps with MCP support.
 
-Build the project first, then add this server to your MCP client config:
+Install dependencies, build the project, and run a typecheck:
+
+```bash
+cd /Users/bxxf/projects/ola-ola
+npm install
+npm run build
+npm run typecheck
+```
+
+To run the built `stdio` server directly:
+
+```bash
+cd /Users/bxxf/projects/ola-ola
+npm start
+```
+
+For local development without building first:
+
+```bash
+npm run dev
+```
+
+The server speaks MCP over `stdio`, so most local MCP clients need a command plus args rather than a URL.
+
+To run MCP over HTTP locally:
+
+```bash
+npm run dev:http
+```
+
+The HTTP MCP endpoint is available at:
+
+```text
+http://localhost:3000/mcp
+```
+
+After building, add this server to your MCP client config:
 
 ```json
 {
