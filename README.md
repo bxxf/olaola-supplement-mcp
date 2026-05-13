@@ -6,6 +6,10 @@ Finding the right supplements is rarely just a search problem. What makes sense 
 
 This MCP server connects a model to [OlaOla](https://www.olaola.cz/) product data, product composition details, account order history, anonymous shadow carts, and quick-buy links. The connector retrieves facts; the model keeps the personal context, asks follow-up questions, checks ingredients, compares doses, and decides what is worth recommending.
 
+## Disclaimer
+
+This project is an independent, community-built MCP server. It is not affiliated with, endorsed by, sponsored by, or officially connected to OlaOla, olaola.cz, or their owners/operators. Product names, trademarks, and links are used only to identify the public storefront and account workflows this connector interacts with.
+
 ## What Can You Do?
 
 ### Personal Supplement Picking
@@ -319,3 +323,27 @@ https://www.olaola.cz/?quick-buy=43%2C16
 ```
 
 The user's browser creates its own cart after opening the link. No session cookie is shared.
+
+## License
+
+MIT License
+
+Copyright (c) 2026 bxxf
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
